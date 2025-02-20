@@ -27,7 +27,7 @@
 
         .logo-container {
             margin-left:40px;
-            position:absolute;
+            position-a;
         }
 
         .logo {
@@ -192,7 +192,26 @@
     text-decoration: none;
     font-weight: bold;
 }
+@media (max-width: 768px) {
+    .logo-container {
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+    }
 
+    .logo {
+        height: 50px;
+    }
+
+    .title-container h1 {
+        font-size: 30px; /* Adjust the font size to fit mobile screens */
+        margin: 0; /* Ensure no extra margin is causing wrapping */
+    }
+}
+
+.info-image {
+    margin-top: 40px; /* Adjust the value as needed */
+}
     </style>
 </head>
 <body>
@@ -208,11 +227,11 @@
     </div>
     <div class="section">
         <h2>About Us</h2>
-        <p>Welcome to Junk and Jack! I’m a 15-year-old entrepreneur and the founder of Junk and Jack. We come and pick up your garbage cans every week so you don't have to. Say goodbye to overflowing garbages and let us make trash day easier for you!</p>
+        <p>Welcome to Junk and Jack! I’m a 15-year-old entrepreneur and the founder of Junk and Jack. We offer a service that picks up your garbage cans every week and brings them to the curb so you don’t have to. Say goodbye to overflowing garbages and let us make trash day easier for you!</p>
         <div class="services">
             <div class="service-card">
                 <h3>Residential Junk Pickup</h3>
-                <p>Every Tuesday me or a member of my team will come and take out your garbage cans. Enjoy the convenience of our weekly garbage pickup service, so you'll never have to worry about overflowing trashcans or having to take out the garbage.</p>
+                <p>We come and pick up your garbage every Tuesday and bring it to the curb so you don't have to. Enjoy the convenience of our weekly garbage pickup service, so you'll never have to worry about overflowing trashcans ever again.</p>
             </div>
         </div>
     </div>
@@ -254,25 +273,22 @@
     </div>
 
     <div class="section info-section">
-        <h2>Service Information</h2>
+        <h2>Extra Information</h2>
         <div class="info-item">
             <h3>Standard Service</h3>
-            <p>Our Standard Service includes weekly garbage pickup at an affordable rate, ensuring your garbage is managed efficiently and never overflowing.</p>
+            <p>Our Standard Service includes weekly garbage pickup at an affordable rate, ensuring your waste is managed efficiently.</p>
         </div>
         <div class="info-item">
             <h3>Door Service</h3>
-            <p>With our Door Service, enjoy the convenience of having us knocking on your door to pick up your garbage straight from your hand so you never forget to take out the garbage </p>
+            <p>With our Door Service, enjoy the convenience of having your garbage picked up right from your doorstep for a small additional fee.</p>
         </div>
         <div class="info-item">
             <h3>Adding a Bin</h3>
-            <p>Have more garbage than you can handle? Add an extra bin to your service plan to accommodate all your waste disposal needs.</p>
+            <p>Need more space? Add an extra bin to your service plan to accommodate all your waste disposal needs.</p>
         </div>
+        <img src="Provo Garbage Recycle Days (PDF).svg" alt="Provo Garbage Recycle Days" width="100%" height="600px" class="info-image">
     </div>
 
-    <div class="section availability-box">
-        <img src="Provo Garbage Recycle Days (PDF).svg" alt="Provo Garbage Recycle Days" width="100%" height="600px">
-    </div>
-    
     <div class="section">
         <h2>Contact Us</h2>
         <form class="contact-form">
